@@ -3,15 +3,10 @@ package new_id_Recommendation;
 public class newidRecommendation_210523001 {
     public static void main(String[] args) {
         String new_id=".asdqweqwzxc.12.123.";
-        /*
-        1단계.2단계: 소문자 변환
-         */
+
         new_id=new_id.toLowerCase().replaceAll("[^a-z|0-9|_|\\-|.]|","").replaceAll("[.]{2,}",".");
 
 
-        /*
-        처음,끝 . 제거
-         */
         int s=0,e=new_id.length()-1;
         if(s==e && new_id.charAt(0) == '.') new_id ="a";
         else {
