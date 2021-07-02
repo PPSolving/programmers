@@ -37,13 +37,11 @@ class Solution {
                 case ')':
                     
                     if(!line.empty() && line.peek() == '('){
-                        //System.out.println("line.peek(): "+line.peek());
-            
+                        
                         line.pop();
-                        //System.out.println("line.size(): "+line.size());
-            
+                        
                         able = line.size() == 0 ? true : false;
-                        //System.out.println("able: "+able);
+                        
                     } else{
                         line.push(ch);
                     }
@@ -53,7 +51,6 @@ class Solution {
             if(right == left){
                 u = buf.toString();
                 v = p.substring(i+1);
-                //System.out.println("u : "+u+", v : "+v);
                 break;
             }
         }
@@ -80,9 +77,7 @@ class Solution {
             }
         
             newBuf.append(ustr.toString());
-            //result.append(newBuf.toString());
             return newBuf.toString();
-        
         }
         
     }
